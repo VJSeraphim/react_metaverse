@@ -19,6 +19,37 @@ const World = () => (
         title="| People on the World"
         textStyles="text-center"
       />
+      <motion.div
+        variant={fadeIn('up', 'tween', 0.3, 1)}
+        className="relative mt-[68px] w-full h-[550px]"
+      >
+        <img 
+          src="/map.png"
+          alt="map"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute bottom-20 right-20 w-[76px] h-[70px] p-[6px] rounded-full bg-[#5d6680]">
+          <img 
+            src="people-01.png"
+            alt="people1"
+            className="w-full h-full"
+          />
+        </div>
+        <div className="absolute top-10 left-20 w-[76px] h-[70px] p-[6px] rounded-full bg-[#5d6680]">
+          <img 
+            src="people-02.png"
+            alt="people2"
+            className="w-full h-full"
+          />
+        </div>
+        <div className="absolute top-1/2 left-[45%] w-[76px] h-[70px] p-[6px] rounded-full bg-[#5d6680]">
+          <img 
+            src="people-03.png"
+            alt="people"
+            className="w-full h-full"
+          />
+        </div>
+      </motion.div>
       <TitleText 
         title={<>
           Track friends around you and intive them to play together in the same world
