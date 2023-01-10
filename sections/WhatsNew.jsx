@@ -19,7 +19,7 @@ const WhatsNew = () => (
     >
       <motion.div
         variants={fadeIn('right', 'tween', 0.2, 1)}
-        className="flex-[0.75] flex justify-center flex-col"
+        className="flex-[0.95] flex justify-center flex-col"
       >
         <TypingText 
           title="| Whats New..."

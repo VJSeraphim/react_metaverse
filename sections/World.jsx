@@ -13,11 +13,16 @@ const World = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: 'false', amount: 0.25 }}
-      className={`${styles.innerWidth} flex-col lg:flex-row mx-auto flex gap-8`}
+      className={`${styles.innerWidth} flex-col mx-auto flex`}
     >
       <TypingText 
         title="| People on the World"
         textStyles="text-center"
+      />
+      <TitleText 
+        title={<>
+          Track friends around you and intive them to play together in the same world
+        </>}
       />
       <motion.div
         variant={fadeIn('up', 'tween', 0.3, 1)}
@@ -50,11 +55,6 @@ const World = () => (
           />
         </div>
       </motion.div>
-      <TitleText 
-        title={<>
-          Track friends around you and intive them to play together in the same world
-        </>}
-      />
     </motion.div>
   </section>
 );
